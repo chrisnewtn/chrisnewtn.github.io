@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: var(--blue);
+}
+a:visited {
+  color: var(--purple);
+}
+
+body {
+  /* light theme colours */
+  /* https://tailwindcss.com/docs/customizing-colors#default-color-palette */
+  --bg-color: #fafafa;
+  --primary-text: #0a0a0a;
+  --blue: #2563eb;
+  --purple: #9333ea;
+
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--primary-text);
+  background-color: var(--bg-color);
+
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: max-content auto max-content;
+  grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+}
+
+body > header {
+  text-align: center;
+  grid-area: header;
+}
+
+body > main {
+  text-align: center;
+  grid-area: main;
+}
+
+body > footer {
+  text-align: center;
+  grid-area: footer;
+}
+
+.under-construction {
+  background-color: #fbbf24;
+  border: dashed #0a0a0a;
+  padding: 1rem;
+  color: #0a0a0a;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-color: #0a0a0a;
+    --primary-text: #fafafa;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+  }
+}
