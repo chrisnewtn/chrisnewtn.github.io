@@ -60,6 +60,15 @@ body > footer {
   grid-area: footer;
 }
 
+.social {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0 .5rem .5rem .5rem
+}
+.social > img {
+  width: 2rem;
+}
+
 .business-card {
   font-family: Georgia, Times, 'Times New Roman', serif;
   line-height: 1rem;
@@ -93,6 +102,9 @@ body > footer {
 
 .business-card > p {
   margin: 1.5rem 0;
+}
+.business-card .no-money-down {
+  margin-bottom: .5rem;
 }
 
 .business-card .punctuation {
