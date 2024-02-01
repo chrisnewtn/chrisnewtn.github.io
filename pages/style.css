@@ -17,6 +17,8 @@ a:visited {
 body {
   /* https://tailwindcss.com/docs/customizing-colors#default-color-palette */
   --neutral-50: #fafafa;
+  --neutral-400: #a3a3a3;
+  --neutral-700: #3f3f46;
   --neutral-950: #0a0a0a;
   --blue-500: #3b82f6;
   --blue-600: #2563eb;
@@ -25,6 +27,10 @@ body {
   --red-600: #dc2626;
   --red-700: #b91c1c;
   --amber-400: #fbbf24;
+
+  --serif: Georgia, Times, 'Times New Roman', serif;
+
+  --site-margin: 2rem;
 
   font-family: Helvetica, Arial, sans-serif;
 
@@ -43,24 +49,20 @@ body {
 }
 
 body > header {
-  text-align: center;
   grid-area: header;
+  text-align: center;
 }
 
 body > main {
-  text-align: center;
   grid-area: main;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 body > footer {
-  text-align: center;
   grid-area: footer;
+  text-align: center;
 }
 
-.social {
+.business-card .social {
   display: inline-block;
   padding: .5rem;
   margin: 0 .5rem .5rem .5rem
@@ -70,7 +72,7 @@ body > footer {
 }
 
 .business-card {
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--serif);
   line-height: 1rem;
   text-transform: uppercase;
   margin: 1rem;
@@ -125,6 +127,7 @@ body > footer {
   background-size: 28px 28px;
   padding: 1rem;
   color: var(--neutral-950);
+  text-align: center;
 
   animation-duration: 1s;
   animation-name: scrollhatching;
@@ -157,6 +160,7 @@ body > footer {
 body {
   --primary-text: var(--neutral-950);
   --bg-color: var(--neutral-50);
+  --color-neutral: var(--neutral-700);
   --link: var(--blue-600);
   --link-visited: var(--purple-600);
 }
@@ -166,6 +170,7 @@ body {
   body {
     --primary-text: var(--neutral-50);
     --bg-color: var(--neutral-950);
+    --color-neutral: var(--neutral-400);
     --link: var(--blue-500);
     --link-visited: var(--purple-500);
   }
