@@ -7,20 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <section class="business-card">
-      <h1>Chris Newton</h1>
-      <p>Works on<br> contingency<span class="punctuation">?</span></p>
-      <p class="no-money-down">No<span class="punctuation">,</span> money down<span class="punctuation">!</span></p>
+  <header class="site-wide">
+    <div class="banner">
+      <h1 class="logo">Chris Newton</h1>
       <a href="https://github.com/chrisnewtn" rel="me">
         <picture class="social">
           <source srcset="assets/github-mark-white.svg" media="(prefers-color-scheme: dark)">
           <img src="assets/github-mark.svg" alt="The GitHub Octocat logo">
         </picture>
       </a>
-    </section>
+    </div>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li><a href="posts/index.html">Posts</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
+  <main class="home">
     <div class="under-construction">
       <div class="inner">Under Construction</div>
     </div>
