@@ -4,10 +4,10 @@ main > article {
   font-size: 1.2rem;
 }
 
-article h1 {
+article > h1 {
   line-height: 2rem;
 }
-article p {
+article > p {
   line-height: 1.5rem;
 }
 
@@ -26,7 +26,10 @@ article > h6 {
 
 article > h1,
 article > p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+article > p {
+  margin-top: 1.5rem;
 }
 
 article > ul {
@@ -34,6 +37,22 @@ article > ul {
 }
 article > ul > li:not(:last-child) {
   padding-bottom: .5rem;
+}
+
+article > pre {
+  font-size: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+article code {
+  font-family: 'Noto Mono', monospace;
+}
+
+article > p > code {
+  font-size: .95rem;
+  background-color: var(--bg-secondary);
+  padding: .2rem .3rem;
+  border-radius: 0.2rem;
 }
 
 article.snippet {
