@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Noto Serif';
+  font-display: swap;
   src: local('Noto Serif'), local('NotoSerif'), url('assets/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Noto Mono';
+  font-display: swap;
   src: local('Noto Mono'), url('assets/NotoSansMono-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
