@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'Noto Serif';
-  src: local('Noto Serif'), url('assets/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+  src: local('Noto Serif'), local('NotoSerif'), url('assets/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Mono';
+  src: local('Noto Mono'), url('assets/NotoSansMono-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 * {
@@ -62,8 +67,11 @@ header > nav > ul > li > a:hover {
 body {
   /* https://tailwindcss.com/docs/customizing-colors#default-color-palette */
   --neutral-50: #fafafa;
+  --neutral-200: #e5e5e5;
   --neutral-400: #a3a3a3;
   --neutral-700: #3f3f46;
+  --neutral-800: #262626;
+  --neutral-900: #18181b;
   --neutral-950: #0a0a0a;
   --blue-500: #3b82f6;
   --blue-600: #2563eb;
@@ -168,6 +176,7 @@ main.home {
 body {
   --primary-text: var(--neutral-950);
   --bg-color: var(--neutral-50);
+  --bg-secondary: var(--neutral-200);
   --color-neutral: var(--neutral-700);
   --link: var(--blue-600);
   --link-visited: var(--purple-600);
@@ -178,6 +187,7 @@ body {
   body {
     --primary-text: var(--neutral-50);
     --bg-color: var(--neutral-950);
+    --bg-secondary: var(--neutral-800);
     --color-neutral: var(--neutral-400);
     --link: var(--blue-500);
     --link-visited: var(--purple-500);
