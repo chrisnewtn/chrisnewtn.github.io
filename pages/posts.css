@@ -32,11 +32,9 @@ article > p {
   margin-top: 1.5rem;
 }
 
-article > ul {
-  padding-left: 1.5rem;
-}
-article > ul > li:not(:last-child) {
-  padding-bottom: .5rem;
+article > ul > li:not(:last-child),
+article > ol > li:not(:last-child) {
+  padding-bottom: .25rem;
 }
 
 article > pre {
