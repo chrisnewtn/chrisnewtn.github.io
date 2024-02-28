@@ -11,8 +11,18 @@ article > p {
   line-height: 1.5rem;
 }
 
-article > .date-published {
+.publishing-dates {
+  display: flex;
   color: var(--color-neutral);
+}
+@media (max-width: 1280px) {
+  .publishing-dates {
+    flex-direction: column;
+  }
+}
+
+.publishing-dates small:not(:only-child) {
+  margin-right: var(--site-margin);
 }
 
 article > h1,
