@@ -93,19 +93,12 @@ body {
   margin: 0;
 
   display: grid;
-  grid-template-columns: auto 70vw auto;
+  grid-template-columns: auto max(70vw, 576px) auto;
   grid-template-rows: max-content auto max-content;
   grid-template-areas:
     ". header ."
     ". main ."
     ". footer .";
-}
-
-@media (max-width: 576px) {
-  body {
-    grid-template-columns: 0 100% 0;
-    --site-margin: 1rem;
-  }
 }
 
 body > header {
@@ -120,16 +113,17 @@ body > main {
 body > footer {
   grid-area: footer;
   text-align: center;
-}
-
-main.home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-top: solid thin var(--primary-text);
 }
 
 .social > img {
   width: 2rem;
+}
+
+.under-construction-outer {
+  display: flex;
+  justify-content: center;
+  margin: var(--site-margin);
 }
 
 .under-construction {
@@ -144,6 +138,7 @@ main.home {
   padding: 1rem;
   color: var(--neutral-950);
   text-align: center;
+  display: inline-block;
 
   animation-duration: 1s;
   animation-name: scrollhatching;
@@ -160,10 +155,9 @@ main.home {
   }
 }
 
-.under-construction > .inner {
+.under-construction-inner {
   font-family: sans;
-  padding: 0 2rem;
-  height: 8rem;
+  padding: 1.5rem 2rem;
   font-size: 2rem;
   text-transform: uppercase;
   background-color: var(--amber-400);
@@ -193,5 +187,90 @@ body {
     --color-neutral: var(--neutral-400);
     --link: var(--blue-500);
     --link-visited: var(--purple-500);
+  }
+}
+
+/** Article Styling **/
+
+main > article {
+  margin: var(--site-margin);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+article > h1 {
+  line-height: 2rem;
+}
+article > p {
+  line-height: 1.5rem;
+}
+
+.publishing-dates {
+  display: flex;
+  color: var(--color-neutral);
+}
+@media (max-width: 1280px) {
+  .publishing-dates {
+    flex-direction: column;
+  }
+}
+
+.publishing-dates small:not(:only-child) {
+  margin-right: var(--site-margin);
+}
+
+article > h1,
+article > h2,
+article > h3,
+article > h4,
+article > h5,
+article > h6 {
+  margin-top: 2rem;
+}
+
+article > h1,
+article > p {
+  margin-bottom: 1.5rem;
+}
+article > p {
+  margin-top: 1.5rem;
+}
+
+article > ul > li:not(:last-child),
+article > ol > li:not(:last-child) {
+  padding-bottom: .25rem;
+}
+
+article > pre {
+  font-size: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+article code {
+  font-family: 'Noto Mono', monospace;
+}
+
+article > p > code {
+  font-size: .95rem;
+  background-color: var(--bg-secondary);
+  padding: .2rem .3rem;
+  border-radius: 0.2rem;
+}
+
+article.snippet {
+  display: block;
+}
+article.snippet:not(:last-child) {
+  padding-bottom: var(--site-margin);
+  border-bottom: dotted thin var(--primary-text);
+}
+
+@media (max-width: 576px) {
+  body {
+    grid-template-columns: 0 100% 0;
+    --site-margin: 1rem;
+  }
+  .under-construction-inner {
+    font-size: 1.5rem;
   }
 }
