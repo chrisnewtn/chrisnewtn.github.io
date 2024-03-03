@@ -1,10 +1,4 @@
 @font-face {
-  font-family: 'Noto Serif';
-  font-display: swap;
-  src: local('Noto Serif'), local('NotoSerif'), url('assets/NotoSerif-VariableFont_wdth,wght.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Noto Mono';
   font-display: swap;
   src: local('Noto Mono'), url('assets/NotoSansMono-VariableFont_wdth,wght.ttf') format('truetype');
@@ -85,7 +79,7 @@ body {
 
   --site-margin: 2rem;
 
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif', 'Droid Serif', Georgia, serif;
 
   color: var(--primary-text);
   background-color: var(--bg-color);
@@ -194,7 +188,6 @@ body {
 
 main > article {
   margin: var(--site-margin);
-  font-family: var(--serif);
   font-size: 1.2rem;
 }
 
