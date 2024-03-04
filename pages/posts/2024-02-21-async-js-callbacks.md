@@ -1,5 +1,6 @@
 ---
 title: "Asynchronicity in JavaScript: Callbacks"
+description: "A short history and explainer on what callbacks in JavaScript are, their problems, and how to wrangle them."
 date-published: 2024-02-21
 draft: true
 template: post.template.html
