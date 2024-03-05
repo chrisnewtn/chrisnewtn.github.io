@@ -258,6 +258,12 @@ article.snippet:not(:last-child) {
   border-bottom: dotted thin var(--primary-text);
 }
 
+article picture > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 576px) {
   body {
     grid-template-columns: 0 100% 0;
