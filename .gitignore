@@ -5,4 +5,5 @@ public/**/*.html
 public/**/*.css
 public/**/*.svg
 public/**/*.js
+public/images
 !public/static/**/*.js
