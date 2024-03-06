@@ -21,8 +21,7 @@ function toLanguageElementMap(memo, el) {
   return memo;
 }
 
-
-async function onload() {
+async function highlightCode() {
   const codeElements = Array.from(document.querySelectorAll('article > pre > code'));
 
   if (codeElements.length === 0) {
@@ -43,6 +42,24 @@ async function onload() {
       hljs.highlightElement(element);
     }
   }
+}
+
+function updateArticleImageLinksToMatchCurrentSrc() {
+  for (const anchorEl of document.querySelectorAll('a.article-image')) {
+    const imgEl = anchorEl.querySelector('img');
+
+    if (imgEl.currentSrc !== anchorEl.href) {
+      // Technically the value of this property can change, but since all I'm
+      // offering are different formats at the moment, I don't think it's
+      // possible.
+      anchorEl.href = imgEl.currentSrc;
+    }
+  }
+}
+
+async function onload() {
+  updateArticleImageLinksToMatchCurrentSrc();
+  await highlightCode();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
