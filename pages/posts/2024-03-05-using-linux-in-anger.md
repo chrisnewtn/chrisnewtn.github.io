@@ -2,6 +2,7 @@
 title: Using Linux in Anger
 description: "Two years ago, I uninstalled Windows. Here's why, and how it's been going."
 date-published: 2024-03-05
+date-updated: 2024-03-07
 template: post.template.html
 tags:
   - blog
@@ -53,6 +54,8 @@ Usually there are other factors as well. Plasma 5's Wayland support is imperfect
 With VLC, it seems some library that support was dependant on was just abandoned? I can't be bothered to figure that one out, so I've just switched to [mpv](https://mpv.io/) instead.
 
 Dealing with these issues is an exercise in finding workarounds, and learning to tolerate certain problems. Wayland flickers, so I've switched back to X11. It looks laggy, so I've upped the refresh rate to 120hz. It looks smooth, but now, sometimes, the screen will go blank for a second or two in certain instances. I'm willing to sit with it like this for a while until some update fixes it. What are you gonna do.
+
+_**Update:** literally the day after I wrote this, an [update to version 550.54.14](https://forum.manjaro.org/t/stable-update-2024-03-06-kernels-systemd-kde-gear-qt-gnome-firefox-thunderbird/157754) of the driver fixed my "screen go blank for a second" issue._ 🙂
 
 ## Gaming, Steam, and Proton
 
