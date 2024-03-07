@@ -21,7 +21,7 @@ At the time my work had provided me with a PC that was superior in spec in every
 
 ## Which distro did I pick?
 
-![A screenshot of my KDE Plasma desktop. The text editor Kate is open on the Markdown file of this article. Also open is the Application Launcher, which is similar to Windows' Start Menu.](../images/Screenshot_20240305_203856.png)
+![A screenshot of my KDE Plasma desktop. The text editor Kate is open on the Markdown file of this article. Also open is the Application Launcher, which is similar to Windows' Start Menu.](../images/Screenshot_20240305_203856.png "Hey, it's my desktop! I haven't changed much here beyond pin some stuff to the launcher & task bar, and hide a few icons in a the system tray.")
 
 I chose [Manjaro](https://manjaro.org/). The Steam Deck had just been released some months before, and I was aware of two things:
 
@@ -67,7 +67,7 @@ It's _so much_ better now! Most Windows games I've tried "just work". Things you
 
 I'm not just talking about Steam. I've also taken to playing some [Good Old Games](https://www.gog.com/) via [Lutris](https://lutris.net/), and again: it just works.
 
-![A screenshot of the open-source game manager Lutris. The app is open on the library screen, and shows the box art for six games: Freelancer, Populous, Dungeon Keeper 2, Alpha Centauri, Black & White, and Haegemonia.](../images/Screenshot_20240305_123745.png)
+![A screenshot of the open-source game manager Lutris. The app is open on the library screen, and shows the box art for six games: Freelancer, Populous, Dungeon Keeper 2, Alpha Centauri, Black & White, and Haegemonia.](../images/Screenshot_20240305_123745.png "Look, all of these are stone cold classics, ok.")
 
 Even abandonware like [Freelancer](https://en.wikipedia.org/wiki/Freelancer_(video_game)) and [Black and White](https://en.wikipedia.org/wiki/Black_%26_White_(video_game)) I've managed to get working with the HD mods installed and everything.
 
