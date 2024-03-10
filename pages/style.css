@@ -69,8 +69,10 @@ body {
   --neutral-800: #262626;
   --neutral-900: #18181b;
   --neutral-950: #0a0a0a;
+  --blue-400: #60a5fa;
   --blue-500: #3b82f6;
   --blue-600: #2563eb;
+  --purple-400: #c084fc;
   --purple-500: #a855f7;
   --purple-600: #9333ea;
   --red-600: #dc2626;
@@ -179,8 +181,8 @@ body {
     --bg-color: var(--neutral-950);
     --bg-secondary: var(--neutral-800);
     --color-neutral: var(--neutral-400);
-    --link: var(--blue-500);
-    --link-visited: var(--purple-500);
+    --link: var(--blue-400);
+    --link-visited: var(--purple-400);
   }
 }
 
