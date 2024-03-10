@@ -75,6 +75,8 @@ body {
   --purple-400: #c084fc;
   --purple-500: #a855f7;
   --purple-600: #9333ea;
+  --red-400: #f87171;
+  --red-500: #ef4444;
   --red-600: #dc2626;
   --red-700: #b91c1c;
   --amber-400: #fbbf24;
@@ -172,6 +174,9 @@ body {
   --color-neutral: var(--neutral-700);
   --link: var(--blue-600);
   --link-visited: var(--purple-600);
+  --code-keyword: var(--red-500);
+  --code-title: var(--purple-600);
+  --code-string: var(--blue-600);
 }
 
 /** Dark **/
@@ -183,6 +188,9 @@ body {
     --color-neutral: var(--neutral-400);
     --link: var(--blue-400);
     --link-visited: var(--purple-400);
+    --code-keyword: var(--red-400);
+    --code-title: var(--purple-400);
+    --code-string: var(--blue-400);
   }
 }
 
