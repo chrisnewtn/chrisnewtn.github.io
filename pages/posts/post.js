@@ -1,5 +1,6 @@
 const languageToFile = new Map([
-  ['js', 'javascript']
+  ['js', 'javascript'],
+  ['md', 'markdown']
 ]);
 
 const languageMatcher = /^language-(?<language>.*)$/;
