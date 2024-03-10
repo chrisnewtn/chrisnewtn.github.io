@@ -20,15 +20,13 @@ article > pre,
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable.language_ {
-  /* prettylights-syntax-keyword */
-  color: #d73a49
+  color: var(--code-keyword)
 }
 .hljs-title,
 .hljs-title.class_,
 .hljs-title.class_.inherited__,
 .hljs-title.function_ {
-  /* prettylights-syntax-entity */
-  color: #6f42c1
+  color: var(--code-title)
 }
 .hljs-attr,
 .hljs-attribute,
@@ -46,8 +44,7 @@ article > pre,
 .hljs-regexp,
 .hljs-string,
 .hljs-meta .hljs-string {
-  /* prettylights-syntax-string */
-  color: #032f62
+  color: var(--code-string)
 }
 .hljs-built_in,
 .hljs-symbol {
@@ -112,23 +109,6 @@ article > pre,
   * Outdated base version: https://github.com/primer/github-syntax-dark
   * Current colors taken from GitHub's CSS
   */
-  .hljs-doctag,
-  .hljs-keyword,
-  .hljs-meta .hljs-keyword,
-  .hljs-template-tag,
-  .hljs-template-variable,
-  .hljs-type,
-  .hljs-variable.language_ {
-    /* prettylights-syntax-keyword */
-    color: #ff7b72
-  }
-  .hljs-title,
-  .hljs-title.class_,
-  .hljs-title.class_.inherited__,
-  .hljs-title.function_ {
-    /* prettylights-syntax-entity */
-    color: #d2a8ff
-  }
   .hljs-attr,
   .hljs-attribute,
   .hljs-literal,
@@ -141,12 +121,6 @@ article > pre,
   .hljs-selector-id {
     /* prettylights-syntax-constant */
     color: #79c0ff
-  }
-  .hljs-regexp,
-  .hljs-string,
-  .hljs-meta .hljs-string {
-    /* prettylights-syntax-string */
-    color: #a5d6ff
   }
   .hljs-built_in,
   .hljs-symbol {
