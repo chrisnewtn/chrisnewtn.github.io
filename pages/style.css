@@ -246,10 +246,47 @@ article code {
   font-family: 'Noto Mono', monospace;
 }
 
+article > h1 {
+  font-size: 2rem;
+}
+article > h2 {
+  font-size: 1.75rem;
+}
+article > h3 {
+  font-size: 1.5rem;
+}
+article > h4 {
+  font-size: 1.25rem;
+}
+
+article > h1 > code {
+  font-size: calc(2rem * 0.95);
+}
+article > h2 > code {
+  font-size: calc(1.75rem * 0.95);
+}
+article > h3 > code {
+  font-size: calc(1.5rem * 0.95);
+}
+article > h4 > code {
+  font-size: calc(1.25rem * 0.95);
+}
+
+article > p > a > code,
 article > p > code {
   font-size: .95rem;
+}
+
+article > h1 > code,
+article > h2 > code,
+article > h3 > code,
+article > h4 > code,
+article > h5 > code,
+article > h6 > code,
+article > p > a > code,
+article > p > code {
+  padding: .025rem .2rem;
   background-color: var(--bg-secondary);
-  padding: .2rem .3rem;
   border-radius: 0.2rem;
 }
 
