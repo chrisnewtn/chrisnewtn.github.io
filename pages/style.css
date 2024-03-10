@@ -267,6 +267,15 @@ article picture > img {
   object-fit: contain;
 }
 
+article figure {
+  margin: 1.5rem 0;
+  background-color: var(--bg-secondary);
+}
+
+article figcaption {
+  padding: 0.75rem 1rem 1rem 1rem;
+}
+
 @media (max-width: 576px) {
   body {
     grid-template-columns: 0 100% 0;
