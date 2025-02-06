@@ -118,50 +118,19 @@ body > footer {
   width: 2rem;
 }
 
-.under-construction-outer {
+.home {
   display: flex;
-  justify-content: center;
-  margin: var(--site-margin);
-}
-
-.under-construction {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    var(--neutral-950) 0,
-    var(--neutral-950) 10px,
-    var(--amber-400) 10px,
-    var(--amber-400) 20px
-  );
-  background-size: 28px 28px;
-  padding: 1rem;
-  color: var(--neutral-950);
-  text-align: center;
-  display: inline-block;
-
-  animation-duration: 1s;
-  animation-name: scrollhatching;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes scrollhatching {
-  from {
-    background-position-x: 0px;
-  }
-  to {
-    background-position-x: 28px;
-  }
-}
-
-.under-construction-inner {
-  font-family: sans-serif;
-  padding: 1.5rem 2rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  background-color: var(--amber-400);
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+}
+.gol-container {
+  flex-grow: 2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 var(--site-margin) var(--site-margin) var(--site-margin);
+  touch-action: none;
 }
 
 /** Colours **/
@@ -201,11 +170,17 @@ main > article {
   font-size: 1.2rem;
 }
 
+article > h1:first-child {
+  margin-top: 0;
+}
 article > h1 {
   line-height: 2rem;
 }
 article > p {
   line-height: 1.5rem;
+}
+article > p:last-child {
+  margin-bottom: 0;
 }
 
 .publishing-dates {
@@ -327,8 +302,5 @@ article figcaption {
   body {
     grid-template-columns: 0 100% 0;
     --site-margin: 1rem;
-  }
-  .under-construction-inner {
-    font-size: 1.5rem;
   }
 }
