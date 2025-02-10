@@ -1,6 +1,7 @@
 ---
 title: Using Linux in Anger
 description: "Two years ago, I uninstalled Windows. Here's why, and how it's been going."
+emoji: 🐧
 date-published: 2024-03-05
 date-updated: 2024-03-07
 template: post.template.html

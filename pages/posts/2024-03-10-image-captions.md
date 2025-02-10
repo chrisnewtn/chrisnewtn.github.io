@@ -1,6 +1,7 @@
 ---
 title: Image Captions and Markdown
 description: "Markdown has no explicit was of captioning images, but you can crowbar them in with Unified.js"
+emoji: 🖼️
 date-published: 2024-03-10
 template: post.template.html
 tags:
