@@ -82,6 +82,7 @@ body {
   --amber-400: #fbbf24;
 
   --site-margin: 2rem;
+  --text-margin: 1.5rem;
 
   font-family: 'Noto Serif', 'Droid Serif', Georgia, serif;
 
@@ -168,6 +169,12 @@ body {
 main > article {
   margin: var(--site-margin);
   font-size: 1.2rem;
+  position: relative;
+  overflow: clip;
+}
+
+main > article:last-of-type {
+  overflow-clip-margin: var(--site-margin);
 }
 
 article > h1:first-child {
@@ -180,7 +187,21 @@ article > p {
   line-height: 1.5rem;
 }
 article > p:last-child {
+  margin-bottom: max(var(--site-margin), var(--text-margin));
+}
+.home > article > p:last-child {
   margin-bottom: 0;
+}
+
+article:is([data-emoji]):before {
+  content: attr(data-emoji);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20rem;
+  z-index: -1;
+  opacity: 0.15;
+  filter: blur(6px);
 }
 
 .publishing-dates {
@@ -208,10 +229,10 @@ article > h6 {
 
 article > h1,
 article > p {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--text-margin);
 }
 article > p {
-  margin-top: 1.5rem;
+  margin-top: var(--text-margin);
 }
 
 article > ul > li:not(:last-child),
@@ -279,7 +300,6 @@ article.snippet {
   display: block;
 }
 article.snippet:not(:last-child) {
-  padding-bottom: var(--site-margin);
   border-bottom: dotted thin var(--primary-text);
 }
 
