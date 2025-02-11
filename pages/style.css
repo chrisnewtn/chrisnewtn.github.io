@@ -186,10 +186,11 @@ main > article {
   font-size: 1.2rem;
   position: relative;
   overflow: clip;
+  --margin-bottom: max(var(--site-margin), var(--text-margin));
 }
 
 main > article:last-of-type {
-  overflow-clip-margin: var(--site-margin);
+  overflow-clip-margin: var(--margin-bottom);
 }
 
 article > h1:first-child {
@@ -202,7 +203,7 @@ article > p {
   line-height: 1.5rem;
 }
 article > p:last-child {
-  margin-bottom: max(var(--site-margin), var(--text-margin));
+  margin-bottom: var(--margin-bottom);
 }
 .home > article > p:last-child {
   margin-bottom: 0;
