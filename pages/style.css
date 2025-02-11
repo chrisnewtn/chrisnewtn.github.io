@@ -32,43 +32,51 @@ a:visited {
 .banner .logo {
   margin: 0 0 .2rem 0; /* attempt at visually aligning it vertically */
 }
-header > nav {
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
   border-bottom: solid thin var(--primary-text);
+  background-color: rgba(var(--bg-color-rgb), 0.7);
+  backdrop-filter: blur(6px);
 }
-header > nav > ul {
+nav > ul {
   display: flex;
   list-style: none;
   padding: 0 var(--site-margin);
   margin: 0;
 }
-header > nav > ul > li {
+nav > ul > li {
   display: inline-block;
   padding: 1rem;
 }
-header > nav > ul > li:first-child {
+nav > ul > li:first-child {
   padding-left: 0;
 }
-header > nav > ul > li > a {
+nav > ul > li > a {
   color: var(--primary-text);
   text-decoration-color: transparent;
   transition: text-decoration-color .1s ease-in;
 }
-header > nav > ul > li > a:visited {
+nav > ul > li > a:visited {
   color: var(--primary-text);
 }
-header > nav > ul > li > a:hover {
+nav > ul > li > a:hover {
   text-decoration-color: inherit;
 }
 
 body {
   /* https://tailwindcss.com/docs/customizing-colors#default-color-palette */
-  --neutral-50: #fafafa;
+  --neutral-50: rgb(var(--neutral-50-rgb));
+  --neutral-50-rgb: 250, 250, 250; /*#fafafa*/
   --neutral-200: #e5e5e5;
   --neutral-400: #a3a3a3;
   --neutral-700: #3f3f46;
   --neutral-800: #262626;
   --neutral-900: #18181b;
-  --neutral-950: #0a0a0a;
+  --neutral-950: rgb(var(--neutral-950-rgb));
+  --neutral-950-rgb: 10, 10, 10; /*#0a0a0a*/
   --blue-400: #60a5fa;
   --blue-500: #3b82f6;
   --blue-600: #2563eb;
@@ -93,9 +101,10 @@ body {
 
   display: grid;
   grid-template-columns: auto max(70vw, 576px) auto;
-  grid-template-rows: max-content auto max-content;
+  grid-template-rows: max-content max-content auto max-content;
   grid-template-areas:
     ". header ."
+    ". nav ."
     ". main ."
     ". footer .";
 }
@@ -103,6 +112,10 @@ body {
 body > header {
   grid-area: header;
   text-align: center;
+}
+
+body > nav {
+  grid-area: nav;
 }
 
 body > main {
@@ -140,6 +153,7 @@ body > footer {
 body {
   --primary-text: var(--neutral-950);
   --bg-color: var(--neutral-50);
+  --bg-color-rgb: var(--neutral-50-rgb);
   --bg-secondary: var(--neutral-200);
   --color-neutral: var(--neutral-700);
   --link: var(--blue-600);
@@ -154,6 +168,7 @@ body {
   body {
     --primary-text: var(--neutral-50);
     --bg-color: var(--neutral-950);
+    --bg-color-rgb: var(--neutral-950-rgb);
     --bg-secondary: var(--neutral-800);
     --color-neutral: var(--neutral-400);
     --link: var(--blue-400);
