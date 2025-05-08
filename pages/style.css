@@ -32,6 +32,14 @@ a:visited {
 .banner .logo {
   margin: 0 0 .2rem 0; /* attempt at visually aligning it vertically */
 }
+.h-card,
+.h-card:visited {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+.h-card:hover {
+  text-decoration: underline;
+}
 nav {
   position: sticky;
   top: 0;
