@@ -26,12 +26,12 @@
   </script>
 </head>
 <body>
-  <header class="site-wide">
+  <header role="banner" class="site-wide">
     <div class="banner">
       <a class="h-card" href="https://chrisnewtn.com">
         <h1 class="p-name logo">Chris Newton</h1>
       </a>
-      <a href="https://github.com/chrisnewtn" rel="me">
+      <a aria-label="GitHub profile" href="https://github.com/chrisnewtn" rel="me">
         <picture class="social">
           <source srcset="assets/github-mark-white.svg" media="(prefers-color-scheme: dark)">
           <img src="assets/github-mark.svg" alt="The GitHub Octocat logo">
@@ -39,7 +39,7 @@
       </a>
     </div>
   </header>
-  <nav>
+  <nav aria-label="Main">
     <ul>
       <li>About</li>
       <li><a href="posts/index.html">Posts</a></li>
@@ -49,12 +49,14 @@
     <article>
       <h1>About</h1>
       <p>Hi I'm Chris. I'm a software developer based in Brighton. My pronouns are he/him. Welcome to my website.</p>
-      <p>My focus is JavaScript, whether Node.js or the browser. It's been my <a rel="me" href="https://www.linkedin.com/in/chrisnewtn/">career</a> for well over a decade at this point. I've seen things you wouldn't believe, etc.</p>
+      <p>My focus is JavaScript, whether Node.js or the browser. It's been <a rel="me" href="https://www.linkedin.com/in/chrisnewtn/">my career</a> for well over a decade at this point. I've seen things you wouldn't believe, etc.</p>
       <p>This site is hosted using <a href="https://pages.github.com/">GitHub Pages</a>. The DNS is handled by <a href="https://gandi.net">Gandi</a>. I don't set any cookies or monitor any traffic.</p>
-      <p>You can view the source code <a href="https://github.com/chrisnewtn/chrisnewtn.github.io/">here</a>. I'm writing it in the open, both the content and the static site generator that puts it together. It's a work in progress, and an early one at that.</p>
+      <p>You can <a href="https://github.com/chrisnewtn/chrisnewtn.github.io/">view the source code here</a>. I'm writing it in the open, both the content and the static site generator that puts it together. It's a work in progress, and an early one at that.</p>
     </article>
     <section class="gol-container">
       <game-of-life
+        role="img"
+        aria-label="A running simulation of Conway's Game of Life"
         dark-bg-color="#fafafa"
         dark-color="#0a0a0a"
         bg-color="#0a0a0a"
