@@ -1,0 +1,19 @@
+{
+  "name": "chrisnewtn.github.io",
+  "version": "0.0.0",
+  "description": "Chris Newton's personal website.",
+  "homepage": "https://chrisnewtn.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisnewtn/chrisnewtn.github.io.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Chris Newton <me@chrisnewtn.com> (https://chrisnewtn.com/)",
+  "type": "module",
+  "scripts": {
+    "build": "seanewt -i pages -o public"
+  },
+  "dependencies": {
+    "seanewt": "^1.0.1"
+  }
+}
