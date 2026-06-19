@@ -1,4 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/chrisnewtn/seanewt/refs/tags/v1.1.0/schemas/config-schema.json",
-  "copyrightStart": 2024
+  "$schema": "https://raw.githubusercontent.com/chrisnewtn/seanewt/refs/tags/v1.2.0/schemas/config-schema.json",
+  "copyrightStart": 2024,
+  "githubUrl": "https://github.com/chrisnewtn/chrisnewtn.github.io"
 }
